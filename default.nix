@@ -8,6 +8,10 @@ rec {
   mon2cam = pkgs.callPackage ./pkgs/mon2cam { inherit deno; };
   deno = pkgs.callPackage ./pkgs/deno { };
   ghidra = pkgs.callPackage ./pkgs/ghidra { };
+  vimPlugins = pkgs.recurseIntoAttrs
+    (pkgs.callPackage ./pkgs/vimPlugins { inherit pkgs; });
+  neovim = pkgs.recurseIntoAttrs
+    (pkgs.callPackage ./pkgs/neovim { });
 
   # Somehow the build currently hangs
   # ddlog = pkgs.callPackage ./pkgs/ddlog { };
