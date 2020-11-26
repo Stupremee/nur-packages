@@ -1,4 +1,4 @@
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs ? import <nixpkgs> { } }:
 
 rec {
   lib = import ./lib { inherit pkgs; };
@@ -7,5 +7,8 @@ rec {
 
   mon2cam = pkgs.callPackage ./pkgs/mon2cam { inherit deno; };
   deno = pkgs.callPackage ./pkgs/deno { };
-}
+  ghidra = pkgs.callPackage ./pkgs/ghidra { };
 
+  # Somehow the build currently hangs
+  # ddlog = pkgs.callPackage ./pkgs/ddlog { };
+}
