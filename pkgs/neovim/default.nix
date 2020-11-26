@@ -14,11 +14,12 @@ let
       };
     }));
 in {
-  nightly = neovimPackage {
-    name = "nightly";
-    tag = "nightly";
-    sha256 = "sha256-hHpsZYdVwE9tW0WVee3Y55lrrYQYsT+hGH+3MJrspCg=";
-  };
+  # TODO: Enable once tree-sitter is updated
+  #nightly = neovimPackage {
+    #name = "nightly";
+    #tag = "nightly";
+    #sha256 = "sha256-hHpsZYdVwE9tW0WVee3Y55lrrYQYsT+hGH+3MJrspCg=";
+  #};
 
   stable = neovimPackage {
     name = "stable";
