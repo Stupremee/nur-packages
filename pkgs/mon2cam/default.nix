@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
 
     # Create shell script
     echo "#/bin/sh" > $out/bin/mon2cam
-    echo "${pkgs.deno}/bin/deno run --unstable -A $out/share/Mon2Cam/mod.ts -- $@" >> $out/bin/mon2cam
+    echo "${deno}/bin/deno run --unstable -A $out/share/Mon2Cam/mod.ts -- $@" >> $out/bin/mon2cam
     chmod +x $out/bin/mon2cam
   '';
 
