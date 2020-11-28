@@ -34,6 +34,5 @@ stdenv.mkDerivation rec {
     homepage = "https://github.com/vmware/differential-datalog";
     description = "An incremental programming language ";
     platforms = platforms.linux;
-    maintainers = with maintainers; [ VMWare ];
   };
 }

@@ -57,7 +57,5 @@ in stdenv.mkDerivation rec {
     homepage = "https://ghidra-sre.org/";
     platforms = [ "x86_64-linux" ];
     license = licenses.asl20;
-    maintainers = with maintainers; [ ck3d govanify ];
   };
-
 }

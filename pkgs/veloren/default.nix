@@ -22,7 +22,6 @@ let
       homepage = "https://veloren.net/";
       platforms = [ "x86_64-linux" ];
       license = licenses.gpl3;
-      maintainers = with maintainers; [ VelorenDevelopers ];
     };
   };
 in {
