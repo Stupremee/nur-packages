@@ -33,7 +33,7 @@ in {
     src = fetchzip {
       url =
         "https://veloren-4129.fra1.digitaloceanspaces.com/releases/${version}-linux.tar.gz";
-      sha256 = "sha256-B2mOPAXnKaHuC5SQCQE7kZB1dU5h46L0fbbSuEin8Pc=";
+      sha256 = "sha256-HOyrnm34GViQTvglk6EgWCX07MkAfI/+eEtahgRelEw=";
       stripRoot = false;
     };
 
