@@ -4,7 +4,7 @@ rustPlatform.buildRustPackage rec {
   pname = "rust-analyzer";
   version = "2020-12-14";
   rev = version;
-  cargoSha256 = "sha256-Np9lq4LDseRHiBKrIhoE5MkNr/mzbGpFzB3jNk4GASQ=";
+  cargoSha256 = "1jnld4fi22cd94lna9qp94gh6ygfhil679vjdjs6g9gbaksl4hz8";
 
   src = fetchFromGitHub {
     owner = "rust-analyzer";
