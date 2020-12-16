@@ -5,8 +5,8 @@ rec {
   modules = import ./modules;
   overlays = import ./overlays;
 
-  mon2cam = pkgs.callPackage ./pkgs/mon2cam { };
-  deno = pkgs.callPackage ./pkgs/deno { };
+  #mon2cam = pkgs.callPackage ./pkgs/mon2cam { };
+  #deno = pkgs.callPackage ./pkgs/deno { };
   ghidra = pkgs.callPackage ./pkgs/ghidra { };
   vimPlugins = pkgs.recurseIntoAttrs
     (pkgs.callPackage ./pkgs/vimPlugins { inherit pkgs; });
