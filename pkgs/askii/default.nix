@@ -19,6 +19,5 @@ rustPlatform.buildRustPackage rec {
     description = "TUI based ASCII diagram editor.";
     homepage = "https://github.com/nytopop/askii";
     license = licenses.asl20;
-    maintainers = [ maintainers.stupremee ];
   };
 }
